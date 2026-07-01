@@ -331,6 +331,7 @@ header {
 }
 
 .badge {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     margin-bottom: 2rem;
     margin-left: 1rem;
@@ -352,7 +353,8 @@ header {
     max-width: 50%;
     text-align: justify;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.3rem;
     line-height: 1.7;
 }
 
@@ -385,7 +387,15 @@ header {
     text-align: center;
 }
 
+.badge-container-benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .badge_v3 {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     margin-bottom: 2rem;
     margin-left: 2rem;
@@ -404,12 +414,14 @@ header {
 .info-title-benefits h1 {
     font-family: 'Syne', sans-serif;
     font-weight: 800;
-    font-size: 3.4rem;
+    font-size: 3rem;
     color: var(--blue-deep);
 }
 
 .info-title-benefits p {
-    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.2rem;
     margin-top: 20px;
 }
 
@@ -419,11 +431,15 @@ header {
 
 .card-container-benefits {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .card-benefit {
+    max-width: 550px;
+    max-height: 250px;
     background: #ffffff;
     padding: 2rem;
     border-radius: 24px;
@@ -444,13 +460,113 @@ header {
     margin-bottom: 1.5rem;
 }
 
+.card-benefit:nth-child(1) .icon-benefit{
+    color: #2563EB;
+    background: #DBEAFE;
+}
+
+.card-benefit:nth-child(2) .icon-benefit{
+    color: #16A34A;
+    background: #DCFCE7;
+}
+
+.card-benefit:nth-child(3) .icon-benefit{
+    color: #7C3AED;
+    background: #EDE9FE;
+}
+
+.card-benefit:nth-child(4) .icon-benefit{
+    color: #F59E0B;
+    background: #FEF3C7;
+}
+
+.card-benefit:nth-child(5) .icon-benefit{
+    color: #EF4444;
+    background: #FEE2E2;
+}
+
+.card-benefit:nth-child(6) .icon-benefit{
+    color: #10B981;
+    background: #D1FAE5;
+}
+
 .card-benefit h3 {
-    font-size: 1.4rem;
+    font-family: 'Inter', sans-serif;
     margin-bottom: 1rem;
     color: #1f2937;
 }
 
 .card-benefit p {
+    font-family: 'Inter', sans-serif;
     color: #6b7280;
     line-height: 1.7;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 40px 20px;
+    height: 250px;
+    margin-top: auto;
+}
+
+.footer-title {
+    margin-left: 26rem;
+    margin-right: 10rem;
+}
+
+.footer-title h1 {
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.footer-pages {
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-pages a {
+    color: #E6E8FA;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.footer-contacto {
+    margin-left: 27rem;
+}
+
+@media (hover: hover) {
+    .benefits:hover {
+        transform: translateY(-3px);
+        background: rgba(255, 255, 255, 0.18);
+    }
+
+    .card-benefit:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.12);
+    }
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue-mid);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--blue-deep);
 }

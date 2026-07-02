@@ -6,14 +6,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/vacantes.css">
+    <link rel="stylesheet" href="../assets/css/vacantes.css">
     <title> DITHSA - Vacantes </title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <a href="index.html" class="nav-logo">
-                <div class="logo-mark"> <img src="../img/ei--user.png" alt="Logo empresa"></div>
+                <div class="logo-mark"> <img src="../assets/images/ei--user.png" alt="Logo empresa"></div>
                 <span>DITHSA</span>
             </a>
             <ul class="nav-links" id="navLinks">
@@ -136,7 +136,7 @@
                     <p> Completa el formulario y nos pondremos en contacto contigo</p>
                 </div>
 
-                <form id="formAplicacion" action="enviar.php" method="post" enctype="multipart/form-data">
+                <form id="formAplicacion" action="../Backend/controllers/enviar.php" method="post" enctype="multipart/form-data">
                     <label>Puesto</label>
                     <input name="puesto" type="text" id="puestoVacante" readonly>
 
@@ -238,8 +238,8 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="../Js/btn-burger.js"></script>
-    <script src="../Js/filtro.js" ></script>
-    <script src="../Js/aplicar.js"></script>
+    <script src="../assets/js/btn-burger.js"></script>
+    <script src="../assets/js/filtro.js" ></script>
+    <script src="../assets/js/aplicar.js"></script>
 </body>
 </html>

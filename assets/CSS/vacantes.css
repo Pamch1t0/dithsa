@@ -192,8 +192,11 @@ header {
 }
 
 .buttom-departament {
-    margin-top: 2rem;
-    margin-left: 21rem;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:10px;
+    margin:2rem auto;
 }
 
 .filtro_btn {
@@ -551,16 +554,55 @@ footer {
         display: block;
     }
 
-    .buttom-departament {
-        margin-left: 2rem;
+    .hero-inner{
+        padding:2rem 1rem;
     }
 
-    .vacantes {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin: 20px;
+    .hero-content h1{
+        font-size:2rem;
+        line-height:1.2;
     }
 
+    .hero-sub{
+        font-size:1rem;
+    }
+
+    .buttom-departament{
+        margin:20px;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .filtro_btn{
+        margin:5px;
+    }
+
+    .vacantes{
+        display:grid;
+        grid-template-columns:1fr;
+        gap:20px;
+        margin:20px;
+    }
+
+    .card{
+        width:100%;
+    }
+
+    .modal-content{
+        width:95%;
+        padding:20px;
+    }
+
+    .Two-opciones-form{
+        flex-direction:column;
+    }
+
+    .form-izquierda,
+    .form-derecha{
+        max-width:100%;
+        margin:0;
+    }
     footer {
         height: auto;
         padding: 30px 20px;

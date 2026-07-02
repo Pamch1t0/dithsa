@@ -6,4 +6,4 @@ Thumbs.db
 node_modules/
 
 # Credenciales (ajusta el nombre cuando confirmes cuál usas)
-enviar.php
+Backend/config/mail.php

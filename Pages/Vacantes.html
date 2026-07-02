@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/vacantes.css">
+    <title> DITHSA - Vacantes </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <div class="logo-mark"> <img src="../img/ei--user.png" alt="Logo empresa"></div>
+                <span>DITHSA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Vacantes.html" class="active">Vacantes</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Beneficios</a></li> 
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <div id="nav-icon3">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="dot"></span> Vacantes disponibles
+                    </span>
+                    <h1>¿Cuál es tu <em> próximo reto? </em></h1>
+                    <p class="hero-sub"> Posiciones abiertas en distintas áreas. Filtra por departamento para encontrar la tuya. </p>
+                    
+                </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="vacants-container">
+            <div class="buttom-departament">
+                <button class="filtro_btn active" data-categoria="todos"> Todos </button>
+                <button class="filtro_btn" data-categoria="soldadura"> Soldadura </button>
+                <button class="filtro_btn" data-categoria="tuberia"> Tubería </button>
+                <button class="filtro_btn" data-categoria="acabados"> Acabados </button>
+                <button class="filtro_btn" data-categoria="ayudante"> Ayudantes </button>
+            </div>
+
+
+            <div class="vacantes">
+                <div class="card" data-type="soldadura">
+                    <span class="tag">Soldadura</span>
+                    <h3>Soldador Semiautomática</h3>
+                    <p>Fabricación y ensamble de estructuras metálicas utilizando proceso MIG.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="soldadura">
+                    <span class="tag">Soldadura</span>
+                    <h3>Soldador Electrodo</h3>
+                    <p>Soldadura de tuberías y estructuras para proyectos industriales.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="soldadura">
+                    <span class="tag">Soldadura</span>
+                    <h3>Argonero</h3>
+                    <p>Soldadura TIG en acero inoxidable para sistemas de tratamiento de agua.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="tuberia">
+                    <span class="tag">Tubería</span>
+                    <h3>Pailero</h3>
+                    <p>Interpretación de planos y fabricación de piezas metálicas industriales.</p>
+                    <p><strong>Horario:</strong> Lunes a Viernes</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="tuberia">
+                    <span class="tag">Tubería</span>
+                    <h3>Tubero</h3>
+                    <p>Montaje e instalación de líneas de tubería para proyectos hidráulicos.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="acabados">
+                    <span class="tag">Acabados</span>
+                    <h3>Pintor</h3>
+                    <p>Aplicación de recubrimientos industriales en estructuras metálicas.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="acabados">
+                    <span class="tag">Acabados</span>
+                    <h3>Sandblastero</h3>
+                    <p>Preparación y limpieza de superficies mediante sandblast.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+
+                <div class="card" data-type="ayudante">
+                    <span class="tag">Ayudantes</span>
+                    <h3>Ayudante General</h3>
+                    <p>Apoyo en actividades de taller, carga de materiales y limpieza del área.</p>
+                    <p><strong>Horario:</strong> Tiempo completo</p>
+                    <button class="apply">Aplicar</button>
+                </div>
+            </div>
+        </section>
+
+        <div id="modalAplicar" class="modal">
+            <div class="modal-content">
+
+                <span class="cerrar">&times;</span>
+
+                <div class="modal-header">
+                    <h2> Solicitar Puesto</h2>
+                    <p> Completa el formulario y nos pondremos en contacto contigo</p>
+                </div>
+
+                <form id="formAplicacion" action="enviar.php" method="post" enctype="multipart/form-data">
+                    <label>Puesto</label>
+                    <input name="puesto" type="text" id="puestoVacante" readonly>
+
+                    <label>Nombre Completo</label>
+                    <input name="name" type="text" placeholder="Tu nombre completo" required>
+
+                    <div class="Two-opciones-form">
+                        <div class="form-izquierda">
+                            <label>Edad</label>
+                            <input placeholder="Ej. 28" name="age" type="number" min="18" max="65" required>
+                        </div>
+
+                        <div class="form-derecha">
+                            <label>Sexo</label>
+                            <select name="sexo" required>
+                                <option value="" disabled selected>Seleccione</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino">Femenino</option>
+                                <option value="Prefierno-no decirlo">Prefiero no decirlo</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="Two-opciones-form">
+                        <div class="form-izquierda">
+                            <label>Teléfono</label>
+                            <input name="phone" type="tel" placeholder="+52 81 8182 4019" required>
+                        </div>
+                        
+                        <div class="form-derecha">
+                            <label>Ciudad o Municipio</label>
+                            <input name="city-municipality" type="text" placeholder="Monterrey. NL" required>
+                        </div>
+                    </div>
+                                        
+                    <label>Correo Electrónico</label>
+                    <input name="email" type="email" placeholder="tucorrep@gmail.com" required>
+
+                    <label>¿Cuenta con experiencia?</label>
+                    <select name="xp" id="experiencia" required>
+                        <option value="seleccione" disabled selected>Seleccione</option>
+                        <option value="si">Sí</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <div id="campoExperiencia">
+                        <label>¿Dónde ha trabajado anteriormente?</label>
+                        <textarea name="field-experience" rows="4" style="resize: none;"></textarea>
+                    </div>
+
+                    <label> Currículum (PDF)</label>
+                    <input name="curriculum" type="file" accept=".pdf" required>
+
+                    <button type="submit">
+                        Enviar Solicitud
+                    </button>
+
+                </form>
+            </div>
+
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+
+            <div class="footer-links">
+                <div class="footer-title">
+                    <h1> DITHSA </h1>
+
+                    <p>
+                        &copy; 2026 Tu Sitio Web. Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+                <nav>
+                    <ul class="footer-pages">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="Vacantes.html"> Vacantes </a></li>
+                        <li><a href="#">Nosotros</a></li>
+                        <li><a href="#">Beneficios</a></li>
+                        <li><a href="#">Contactos</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <hr> <br>
+
+            <div class="footer-contacto">
+                <h3> Contáctanos </h3>
+                <p>Email: DITHSA@gmail.com</p>
+                <p>Teléfono: +52 811 983 2345</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../Js/btn-burger.js"></script>
+    <script src="../Js/filtro.js" ></script>
+    <script src="../Js/aplicar.js"></script>
+</body>
+</html>

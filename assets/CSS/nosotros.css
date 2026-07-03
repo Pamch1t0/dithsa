@@ -191,7 +191,6 @@ header {
     line-height: 1.7;
 }
 
-
 .historia { 
     padding: 4rem 2rem; 
 }
@@ -246,7 +245,7 @@ header {
     flex: 1 1 320px;
     max-width: 500px;
     aspect-ratio: 4 / 3;
-    background: var(--gray-100);
+    background: red;
     border-radius: 20px;
 }
  

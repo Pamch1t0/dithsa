@@ -185,7 +185,7 @@ header {
 .hero-sub {
     color: rgba(255,255,255,0.7);
     font-family: 'Inter', sans-serif;
-    font-size: 1.1  rem;
+    font-size: 1.1rem;
     max-width: 540px;
     margin-bottom: 2rem;
     line-height: 1.7;
@@ -223,9 +223,11 @@ header {
 
 .vacantes {
     justify-content: center;
-    margin: 30px 20px;
+    max-width: 1280px;
+    margin: 30px auto;
+    padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(3, 400px);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px;
 }
 
@@ -439,8 +441,9 @@ footer {
 }
 
 .footer-title {
-    margin-left: 26rem;
-    margin-right: 10rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .footer-title h1 {
@@ -451,7 +454,9 @@ footer {
 .footer-links {
     display: flex;
     align-items: center;
-    margin: 20px;
+    max-width: 1280px;
+    margin: 20px auto;
+    padding: 0 2rem;
 }
 
 .footer-pages {
@@ -467,7 +472,9 @@ footer {
 }
 
 .footer-contacto {
-    margin-left: 27rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 ::-webkit-scrollbar {
@@ -509,6 +516,19 @@ footer {
     }
 }
 
+@media (max-width: 1024px) {
+    .vacantes {
+        padding: 0 1.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.75rem;
+    }
+
+    .form-derecha {
+        margin-left: 1.5rem;
+    }
+}
 
 @media (max-width: 768px) {
     .nav-links {
@@ -582,7 +602,8 @@ footer {
         display:grid;
         grid-template-columns:1fr;
         gap:20px;
-        margin:20px;
+        margin:20px auto;
+        padding:0 1rem;
     }
 
     .card{
@@ -612,11 +633,11 @@ footer {
         flex-direction: column;
         text-align: center;
         gap: 20px;
-        margin: 0;
+        margin: 0 auto;
     }
 
     .footer-title {
-        margin: 0;
+        margin: 0 auto;
     }
 
     .footer-pages {
@@ -630,7 +651,7 @@ footer {
     }
 
     .footer-contacto {
-        margin-left: 0;
+        margin: 0 auto;
         text-align: center;
     }
 }

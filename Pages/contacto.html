@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/CSS/contacto.css">
+    <title> DITHSA - Contacto </title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="../index.html" class="nav-logo">
+                <div class="logo-mark"> <img src="../assets/images/ei--user.png" alt="Logo empresa"></div>
+                <span>DITHSA</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="Vacantes.html">Vacantes</a></li>
+                <li><a href="Nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+
+            <div id="nav-icon3">
+                <span></span><span></span><span></span><span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-bg">
+                <div class="hero-grid"></div>
+            </div>
+            <div class="hero-inner">
+                <div class="hero-content">
+                    <span class="eyebrow">
+                        <span class="dot"></span> Hablemos
+                    </span>
+                    <h1> Estamos para <em> ayudarte </em></h1>
+                    <p class="hero-sub"> ¿Tienes dudas sobre nuestros servicios o quieres cotizar un proyecto? Contáctanos. </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto-container">
+            <div class="contacto-grid">
+
+                <div class="info-contacto">
+                    <span class="badge"> INFORMACIÓN DE CONTACTO </span>
+
+                    <div class="dato-contacto">
+                        <div class="dato-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z" fill="none" stroke="none"/><path d="M22 6 12 13 2 6"/><path d="M2 6h20v12H2z"/></svg>
+                        </div>
+                        <div>
+                            <strong> Correo </strong>
+                            <p> DITHSA@gmail.com </p>
+                        </div>
+                    </div>
+
+                    <div class="dato-contacto">
+                        <div class="dato-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <strong> Teléfono </strong>
+                            <p> +52 811 983 2345 </p>
+                        </div>
+                    </div>
+
+                    <div class="dato-contacto">
+                        <div class="dato-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <strong> Ubicación </strong>
+                            <p> Monterrey, Nuevo León, México </p>
+                        </div>
+                    </div>
+
+                    <div class="dato-contacto">
+                        <div class="dato-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                        </div>
+                        <div>
+                            <strong> Horario </strong>
+                            <p> Lunes a Viernes, 9:00 - 18:00 </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-contacto">
+                    <h2> Envíanos un mensaje </h2>
+                    <p> Responderemos a la brevedad posible. </p>
+
+                    <form id="formContacto" method="post">
+                        <label>Nombre completo</label>
+                        <input name="name" type="text" placeholder="Tu nombre" required>
+
+                        <label>Correo electrónico</label>
+                        <input name="email" type="email" placeholder="tucorreo@gmail.com" required>
+
+                        <label>Teléfono</label>
+                        <input name="phone" type="tel" placeholder="+52 81 8182 4019" required>
+
+                        <label>Asunto</label>
+                        <input name="asunto" type="text" placeholder="¿En qué te podemos ayudar?" required>
+
+                        <label>Mensaje</label>
+                        <textarea style="resize: none;" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+                        <button type="submit"> Enviar Mensaje </button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor-footer">
+
+            <div class="footer-links">
+                <div class="footer-title">
+                    <h1> DITHSA </h1>
+
+                    <p>
+                        &copy; 2026 Tu Sitio Web. Todos los derechos reservados.
+                    </p>
+
+                </div>
+
+                <nav>
+                    <ul class="footer-pages">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="Vacantes.html">Vacantes</a></li>
+                        <li><a href="Nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+
+            <hr> <br>
+
+            <div class="footer-contacto">
+                <h3> Contáctanos </h3>
+                <p>Email: DITHSA@gmail.com</p>
+                <p>Teléfono: +52 811 983 2345</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../assets/js/btn-burger.js"></script>
+    <script src="../assets/Js/contacto.js"></script>
+</body>
+</html>

@@ -7,3 +7,6 @@ node_modules/
 
 # Credenciales (ajusta el nombre cuando confirmes cuál usas)
 Backend/config/mail.php
+
+Backend/curriculums/*
+!Backend/curriculums/.htaccess

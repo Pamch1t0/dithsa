@@ -76,3 +76,217 @@ body {
 .btn-cerrar-sesion:hover {
     background: rgba(255,255,255,0.1);
 }
+
+.dashboard-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+}
+
+.dashboard-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+ 
+.dashboard-top h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.85rem;
+    color: var(--blue-deep);
+}
+ 
+.periodo-form {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+ 
+.periodo-form label {
+    font-weight: 600;
+    color: var(--gray-600);
+    font-size: 0.9rem;
+}
+ 
+.periodo-form select {
+    padding: 0.55rem 1rem;
+    border-radius: 10px;
+    border: 1px solid var(--gray-200);
+    background: var(--white);
+    color: var(--gray-800);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.2s;
+}
+ 
+.periodo-form select:focus {
+    border-color: var(--blue-light);
+}
+ 
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+ 
+.stat-card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 1.75rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--gray-200);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+ 
+.stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+ 
+.icon-vacantes {
+    background: rgba(0, 150, 199, 0.12);
+    color: var(--blue-light);
+}
+ 
+.icon-contactos {
+    background: rgba(124, 58, 237, 0.12);
+    color: #7C3AED;
+}
+ 
+.stat-info {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.stat-number {
+    font-family: 'Syne', sans-serif;
+    font-size: 2.1rem;
+    font-weight: 800;
+    color: var(--blue-deep);
+    line-height: 1.1;
+}
+ 
+.stat-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--gray-800);
+    margin-top: 0.2rem;
+}
+ 
+.stat-periodo {
+    font-size: 0.8rem;
+    color: var(--gray-600);
+    margin-top: 0.15rem;
+}
+ 
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.08);
+}
+
+.container-btn-tables {
+    margin: 2rem auto;
+}
+
+.btn-tables {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0 1rem;
+}
+
+.btn-toggle {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    color: var(--gray-600);
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 3px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.btn-toggle.active {
+    color: var(--blue-deep);
+    border-bottom: 3px solid var(--blue-light);
+}
+
+.tittle-tables {
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: var(--blue-deep);
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-table {
+    display: none;
+    flex-direction: column;
+}
+
+.container-table.active {
+    display: block;
+}
+
+table {
+    margin: 2rem auto;
+    overflow: hidden;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+table th {
+    background-color: var(--blue-mid);
+    color: var(--white  );
+    text-align: center;
+    padding: 14px;
+    font-size: 18px;
+}
+
+table td {
+    text-align: center;
+    padding: 12px;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+}
+
+table td a {
+    text-decoration: none;
+    color: var(--blue-deep);
+    font-weight: 800;
+}
+
+table tr:hover { 
+    background-color: rgb(226, 230, 241);
+    transition: 0.2s ease;
+}
+
+.no-data-message {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--gray-600);
+    margin-top: 2rem;
+}

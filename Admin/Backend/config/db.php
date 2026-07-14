@@ -4,5 +4,5 @@
         'host' => 'localhost',
         'user' => 'root',
         'password' => '',
-        'database' => 'DITHSA'
+        'database' => 'dithsa'
     ];

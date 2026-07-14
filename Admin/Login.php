@@ -29,7 +29,7 @@
         if ($usuario === '' || $password === '') {
             $error = 'Ingrese su usuario y contraseña';
         } else {
-            $consulta = "SELECT * FROM administradores WHERE nombre = ?";
+            $consulta = "SELECT * FROM administradores WHERE usuario = ?";
             $stmt = mysqli_prepare($db, $consulta);
             mysqli_stmt_bind_param($stmt, 's', $usuario);
             mysqli_stmt_execute($stmt);
